@@ -1,6 +1,6 @@
-import React from "react"
+import "./style.scss"
 
-export default function CoinPrice() {
+function CoinPrice() {
 	return (
 		<div>
 			<div className="coin-price">
@@ -13,3 +13,5 @@ export default function CoinPrice() {
 		</div>
 	)
 }
+
+export default CoinPrice

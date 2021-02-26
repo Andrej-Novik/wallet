@@ -1,6 +1,5 @@
-import React from "react"
-
-export default function AboutCoin() {
+import "./style.scss"
+function AboutCoin() {
 	return (
 		<div className="about-coin">
 			<div className="abbreviation">BTC</div>
@@ -8,3 +7,5 @@ export default function AboutCoin() {
 		</div>
 	)
 }
+
+export default AboutCoin

@@ -1,0 +1,18 @@
+.coin-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.2rem;
+  margin: 0 0 0 1.2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 0.2rem;
+  background-color: #efdfed;
+  border-radius: 0.5rem;
+}
+	

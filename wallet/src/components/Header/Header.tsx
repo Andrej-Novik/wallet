@@ -1,6 +1,5 @@
-import React from "react"
-
-export default function Header() {
+import "./style.scss"
+function Header() {
 	return (
 		<div className="header">
 			<div className="text">Итоговый баланс</div>
@@ -8,3 +7,5 @@ export default function Header() {
 		</div>
 	)
 }
+
+export default Header
