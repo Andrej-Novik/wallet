@@ -1,0 +1,20 @@
+.coinPrice {
+  width: 120px;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin: 0 0 0.3rem 0;
+}
+.changes {
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  color: #adadad;
+  font-size: 0.875rem;
+}
+.percent {
+  color: #13a32a;
+  font-size: 0.875rem;
+}
