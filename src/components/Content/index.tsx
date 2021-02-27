@@ -1,5 +1,5 @@
-import "./style.scss"
-import Coin from "../Coin/Coin"
+import styles from "./style.module.scss"
+import Coin from "../Coin"
 
 function Content() {
 	//const coins = [
@@ -22,7 +22,7 @@ function Content() {
 	//]
 	
 	return (
-		<div className="content">
+		<div className={styles.content}>
 			<Coin />
 		</div>
 	)
