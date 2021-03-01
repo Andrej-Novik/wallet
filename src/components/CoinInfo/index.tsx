@@ -2,12 +2,25 @@ import styles from "./style.module.scss"
 import AboutCoin from "../AboutCoin"
 import Picture from "../Picture"
 
-function CoinInfo() {
+export interface CoinInfoProps {
+	name?: string,
+	abb?: string,
+	img?: string,
+	amount?: number
+}
+
+
+export function CoinInfo({
+	name,
+	abb,
+	img,
+	amount
+}: CoinInfoProps)  {
 	return (
 		<div className={styles.coinInfo}>
-			<Picture />
-			<AboutCoin />
-			<div className={styles.amount}>0.2 BTC</div>
+			<Picture img={ img }/>
+			<AboutCoin name={name} abb={ abb }/>
+			<div className={styles.amount}>{ amount } { abb }</div>
 		</div>
 	)
 }

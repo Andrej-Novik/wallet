@@ -1,13 +1,21 @@
 import styles from "./style.module.scss"
 
-function CoinPrice() {
+export interface CoinPriceProps {
+	price?: number,
+	percent?: number
+}
+
+export function CoinPrice({
+	price,
+	percent
+}: CoinPriceProps) {
 	return (
 		<div>
 			<div className={styles.coinPrice}>
-				<div className={styles.price}>52,234.22$</div>
+				<div className={styles.price}>{ price }$</div>
 				<div className={styles.changes}>
 					<div className={styles.time}>1 мин</div>
-					<div className={styles.percent}>8.06%</div>
+					<div className={styles.percent}>{ percent }%</div>
 				</div>
 			</div>
 		</div>

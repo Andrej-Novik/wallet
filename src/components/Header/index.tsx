@@ -1,10 +1,16 @@
 import styles from "./style.module.scss"
 
-function Header() {
+export interface HeaderProps {
+	balance?: number
+}
+
+export function Header({
+	balance
+}: HeaderProps) {
 	return (
 		<div className={styles.header}>
 			<div className={styles.text}>Итоговый баланс</div>
-			<div className={styles.balance}>1000.00 $</div>
+			<div className={styles.balance}>{ balance } $</div>
 		</div>
 	)
 }

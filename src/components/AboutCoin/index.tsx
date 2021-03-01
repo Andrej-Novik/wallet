@@ -1,10 +1,19 @@
 import styles from "./style.module.scss"
 
-function AboutCoin() {
+
+export interface AboutCoinProps {
+	name?: string,
+	abb?: string
+}
+
+export function AboutCoin({
+	name,
+	abb
+}: AboutCoinProps) {
 	return (
 		<div className={styles.aboutCoin}>
-			<div className={styles.abbreviation}>BTC</div>
-			<div className={styles.name}>Bitcoin</div>
+			<div className={styles.abbreviation}>{abb}</div>
+			<div className={styles.name}>{name}</div>
 		</div>
 	)
 }

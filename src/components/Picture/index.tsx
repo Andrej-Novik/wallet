@@ -1,10 +1,15 @@
 import styles from "./style.module.scss"
-import bitcoin from "./img/btc.png"
 
-function Picture() {
+export interface PictureProps {
+	img?: string
+}
+
+export function Picture({
+	img
+}: PictureProps) {
 	return (
 		<div className={styles.picture}>
-			<img src={bitcoin} alt="img" />
+			<img src={img} alt="img" />
 		</div>
 	)
 }
